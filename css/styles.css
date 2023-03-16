@@ -485,6 +485,7 @@ body {
 
 .footer-info {
     max-width: 264px;
+    margin-right: 120px;
 }
 
 .footer-text {
@@ -498,7 +499,6 @@ body {
 
 .footer-line {
     display: flex;
-    gap: 120px;
 }
 
 .footer-social-title {
