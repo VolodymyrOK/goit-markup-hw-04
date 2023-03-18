@@ -590,6 +590,10 @@ body {
     gap: 48px 24px;
 }
 
+.portfolio-item {
+    flex-basis: calc((100% - 2 * 24px) / 3);
+}
+
 .portfolio-title {
     color: var(--color-title);
 
@@ -611,13 +615,16 @@ body {
 .decor-bottom {
     padding: 32px 16px 32px 16px;
 
-    border-left: 1px solid var(--border-decor);
-    border-bottom: 1px solid var(--border-decor);
-    border-right: 1px solid var(--border-decor);
+    border: 1px solid var(--border-decor);
+    border-top: none;
+
+    flex-grow: 1;
 }
 
 .portfolio-link {
-    display: block;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
 }
 
 .portfolio-link:is(:hover, :focus) {
